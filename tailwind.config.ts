@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         'section-pink': '#FFF2F3',
       },
+      zIndex: {
+        'header': '1000',
+      },
     },
   },
   plugins: [],
