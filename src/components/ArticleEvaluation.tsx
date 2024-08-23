@@ -1,4 +1,4 @@
-import StarIcon from "./StarIcon";
+import StarIcon from "./icons/StarIcon";
 
 type ArticleEvaluationProps = {
     text: string;
