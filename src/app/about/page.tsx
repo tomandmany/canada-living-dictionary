@@ -18,7 +18,7 @@ const teamMembers = [
 
 export default function AboutUs() {
     return (
-        <div>
+        <main>
             <section className="my-12 px-6 md:px-12">
                 <h2 className="text-4xl font-bold mb-8 text-center">私たちについて</h2>
 
@@ -78,6 +78,6 @@ export default function AboutUs() {
                     これからも、皆様にとって有益な情報を提供し続けるため、チーム一同全力で取り組んでまいります。
                 </p>
             </section>
-        </div>
+        </main>
     );
 };

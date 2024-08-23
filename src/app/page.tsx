@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import SearchArticleSection from '../components/layouts/header/SearchArticleSection';
 
-export default async function Home() {
+export default function Home() {
   return (
     <main>
       <SearchArticleSection />

@@ -7,7 +7,7 @@ type HamburgerMenuProps = {
   className: string;
 };
 
-const HamburgerMenu = ({ className }: HamburgerMenuProps) => {
+export default function HamburgerMenu({ className }: HamburgerMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -66,5 +66,3 @@ const HamburgerMenu = ({ className }: HamburgerMenuProps) => {
     </div>
   );
 };
-
-export default HamburgerMenu;
