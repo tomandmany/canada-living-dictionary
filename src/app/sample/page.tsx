@@ -9,7 +9,7 @@ export default async function Home() {
     return (
         <main className='grid place-items-center'>
             {articles.map((article: articles) => (
-                <div className='prose' dangerouslySetInnerHTML={{ __html: article.body }} />
+                <div className='prose' key={article.id} dangerouslySetInnerHTML={{ __html: article.body }} />
             ))}
         </main>
     )
