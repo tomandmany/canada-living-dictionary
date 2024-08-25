@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import { BulletListFirst, BulletListSecond } from '../components/BulletList';
 import { HeadingSecond } from '../components/Heading';
-import ArticleCard from '../components/ArticleCard';
-import ArticleEvaluation from '../components/ArticleEvaluation';
 import { InstagramNormal, InstagramGradient } from '../components/icons/InstagramIcon';
-import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import SearchArticleSection from '../components/layouts/header/SearchArticleSection';
+import RecommendArticles from './_components/RecommendArticles';
 
 export default function Home() {
   return (
@@ -64,67 +62,24 @@ export default function Home() {
           </BulletListSecond>
         </BulletListFirst>
       </section>
-      <section className='w-full flex flex-col items-center gap-4 py-8'>
-        <section className='flex flex-col items-center'>
-          <HeadingSecond>生活辞典</HeadingSecond>
-          <p className='mt-2 mb-4 text-center'>現地での生活で役立つお得情報や節約術などをご紹介</p>
-          <div className='flex flex-wrap justify-center gap-4'>
-            <ArticleCard url={'/'} heading='ダララマで安い7選' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={4} />
-              <ArticleEvaluation text='交通の便' starNum={4} isLast />
-            </ArticleCard>
-            <ArticleCard url={'/'} heading='カナダのごみ分別' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={5} />
-              <ArticleEvaluation text='カナダ愛' starNum={5} isLast />
-            </ArticleCard>
-          </div>
-          <Link href={'/'} className='flex items-center ml-auto mt-2 border-b border-black'>
-            More <ArrowRight />
-          </Link>
-        </section>
-        <section className='flex flex-col items-center'>
-          <HeadingSecond>食卓辞典</HeadingSecond>
-          <p className='mt-2 mb-4 text-center'>
-            おすすめのスーパーや食材、
-            <br />
-            現地で買える材料を使用した節約レシピを紹介
-          </p>
-          <div className='flex flex-wrap justify-center gap-4'>
-            <ArticleCard url={'/'} heading='ダララマで安い7選' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={4} />
-              <ArticleEvaluation text='交通の便' starNum={4} isLast />
-            </ArticleCard>
-            <ArticleCard url={'/'} heading='カナダのごみ分別' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={5} />
-              <ArticleEvaluation text='カナダ愛' starNum={5} isLast />
-            </ArticleCard>
-          </div>
-          <Link href={'/'} className='flex items-center ml-auto mt-2 border-b border-black'>
-            More <ArrowRight />
-          </Link>
-        </section>
-        <section className='flex flex-col items-center'>
-          <HeadingSecond>娯楽辞典</HeadingSecond>
-          <p className='mt-2 mb-4 text-center'>
-            現地で楽しめるシーズンイベントや観光情報をご紹介
-          </p>
-          <div className='flex flex-wrap justify-center gap-4'>
-            <ArticleCard url={'/'} heading='ダララマで安い7選' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={4} />
-              <ArticleEvaluation text='交通の便' starNum={4} isLast />
-            </ArticleCard>
-            <ArticleCard url={'/'} heading='カナダのごみ分別' date='2024/07/15'>
-              <ArticleEvaluation text='節約' starNum={5} />
-              <ArticleEvaluation text='カナダ愛' starNum={5} isLast />
-            </ArticleCard>
-          </div>
-          <Link href={'/'} className='flex items-center ml-auto mt-2 border-b border-black'>
-            More <ArrowRight />
-          </Link>
-        </section>
+      <section className='w-full flex flex-wrap justify-center gap-x-12 gap-y-24 py-32 px-20'>
+        <RecommendArticles heading='生活辞典'>
+          現地での生活で役立つお得情報や節約術などをご紹介
+        </RecommendArticles>
+        <RecommendArticles heading='食卓辞典'>
+          おすすめのスーパーや食材、
+          <br />
+          現地で買える材料を使用した節約レシピを紹介
+        </RecommendArticles>
+        <RecommendArticles heading='娯楽辞典'>
+          現地で楽しめるシーズンイベントや観光情報をご紹介
+        </RecommendArticles>
+        <RecommendArticles heading='その他'>
+          その他
+        </RecommendArticles>
       </section>
       <section className='w-full flex flex-col items-center px-8 py-6 bg-section-pink'>
-        <HeadingSecond>LET&apos;S ENJOY CANADA</HeadingSecond>
+        <HeadingSecond>EVENT INFORMATION</HeadingSecond>
         <div className='bg-[#D9D9D9] rounded-2xl p-4 flex gap-4 mt-6'>
           <div className='w-[100px] aspect-square bg-gray-400' />
           <div className='flex flex-col'>

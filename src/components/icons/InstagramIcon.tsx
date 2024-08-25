@@ -8,6 +8,6 @@ export function InstagramNormal() {
 
 export function InstagramGradient() {
   return (
-    <Image width={30} height={30} src={'/instagramGradient.svg'} alt={"instagramGradient"} />
+    <Image width={30} height={30} src={'/instagram-gradient.svg'} alt={"instagramGradient"} />
   )
 }

@@ -1,0 +1,1 @@
+{"apiFields":[{"idValue":"mSH_1oFmer","fieldId":"category","name":"カテゴリー名","kind":"text","required":true},{"fieldId":"title","name":"タイトル","kind":"text","required":true},{"fieldId":"img","name":"サムネ写真","kind":"media","required":true},{"fieldId":"body","name":"本文","kind":"richEditorV2","required":true}],"customFields":[]}
